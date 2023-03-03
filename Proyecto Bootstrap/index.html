@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!----------Encabezado---------->
+<header class="container-fluid bg-primary d-flex justify-content-center">
+  <p class="text-light mb-0 p-2 fs-6">¡Bienvenido al mundo windows!</p>
+  <img src="img/mascota.png" width="30" height="30">
+</header>
+
+<!----------Navbar---------->
+<nav class="navbar" style="background-color: #e3f2fd;">
+  <div class="container-fluid">
+    <a class="navbar-brand">Navegador</a>
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+<!----------Carousel---------->
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/windows11.webp" class="d-block w-100" alt="windows11">
+    </div>
+    <div class="carousel-item">
+      <img src="img/windows10.jpg" class="d-block w-100" alt="windows10">
+    </div>
+    <div class="carousel-item">
+      <img src="img/windows7.jpg!d" class="d-block w-100" alt="windowsxp">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!----------Intro---------->
+<section class="d-flex flex-column justify-content-center align-items-center pt-5  text-center w-50 m-auto" id="intro">
+  <h1 class="p-3 fs-2 border-top border-3">Un poco de nuestro sistema operativo <span class="text-primary">Windows<span/></h1>
+   <p class="p-3  fs-4">
+       <span class="text-primary">Windows</span> es el nombre de una familia de distribuciones de software para PC, servidores, 
+       sistemas empotrados y antiguamente teléfonos inteligentes desarrollados y vendidos por Microsoft y disponibles para múltiples arquitecturas, 
+       tales como x86, x86-64 y ARM.       
+   </p>   
+  </section>
+
+  <!----------Cards---------->
+  <center><h3>Windows Populares</h3></center>
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col">
+       <h5>Windows 10</h5>
+        <div class="card" style="width: 18rem;">
+          <img src="img/windows10.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Fue dado a conocer oficialmente en septiembre de 2014, seguido por una breve presentación de demostración en la conferencia Build 2014.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h5>Windows 11</h5>
+        <div class="card" style="width: 18rem;">
+          <img src="img/windows11.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Windows 11 es el nombre de la versión más reciente del sistema operativo Windows​ desarrollado por Microsoft,
+               además de ser el sucesor de la anterior versión del sistema operativo, Windows 10, ​​ lanzado en 2015.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h5>Windows 7</h5>
+        <div class="card" style="width: 18rem;">
+          <img src="img/windows7.jpg!d" class="card-img-top" alt="...">
+          <div class="card-body">
+            <p class="card-text">Se lanzó en octubre de 2009. Esta versión estaba diseñada para uso en PC, incluyendo equipos de escritorio en hogares y oficinas, 
+              equipos portátiles, tabletas, netbooks y equipos multimedia.​</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   <!----------Offcanvas----------> 
+    <div class="mt-5 text-center"></div>
+  <div id="local" class="border-top border-2"> <!-- Linea gris-->  
+      <div>
+          <div class="wrapper-local">
+              <h2>Antes de que sigas da click en...</h2>
+              <h2 class="text-primary mb-4" id="typewriter"></h2> 
+          </div>
+      </div>
+  </div>
+
+  <div class="container text-center"> 
+    <div class="row align-items-start">
+      <div class="col"><!--Canva1-->  
+        
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Una propuesta</button>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasTopLabel">Hola usuario</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    Soy un estudiante de la UTP y te invito a que sigas la carrera de Tic's. Aquí aprenderás más acerca de los sistemas operativos que existen en la actualidad.
+  </div>
+  <center><img src="img/mascota.png" width="90" height="90"></center>
+</div>
+      </div>
+
+      <div class="col"><!--Canva2-->  
+       
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop" aria-controls="staticBackdrop">
+          Unas curiosidades
+        </button>
+        
+        <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop" aria-labelledby="staticBackdropLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">Sabías que...</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              <p>-Los jóvenes actuales apenas conocen los discos informáticos de almacenamiento, más allá del CD o el DVD. 
+                Pero antes de ellos, incluso antes de que existieran los discos duros domésticos, existán los discos blandos o floppy-disk.</p>
+
+              <p>-El software para Windows más antiguo actualmente en desarrollo es el simulador de vuelo Microsoft Flight Simulator, 
+                que nació... tres años antes que Windows.</p>
+
+              <p>-Cuando en 1975 Bill Gates fundó Microsoft con su mentor, el recientemente fallecido Paul Allen, se marcaron un ambicioso objetivo:
+                 "Una casa, un PC con software de Microsoft". Hoy nos parece algo obvio y natural, pero fue Microsoft (con ayuda de compañías como 
+                 Intel o IBM) la que lo consiguió.</p>
+              <center><img src="img/mascota.png" width="90" height="90"></center>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col"><!--Canva3-->  
+       
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Una sorpresa</button>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <A HREF="https://www.microsoft.com/es-xl/windows?r=1"> Hola querido usuario, aquí te dejo un link para que sepas más sobre sobre windows y puedas descargar la versión más nueva, disfrutalo.</A>
+    <center><img src="img/mascota.png" width="90" height="90"></center>
+  </div>
+</div>
+      </div>
+    </div
+   <!----------Accordion---------->
+    <div class="mt-5 text-center"></div>
+  <div id="local" class="border-top border-2"> <!-- Linea gris-->  
+      <div>
+          <div class="wrapper-local">
+              <h2>Características generales de Windows</h2>
+              <h2 class="text-primary mb-4" id="typewriter"></h2> 
+          </div>
+      </div>
+  </div>
+  <div class="container text-center">
+    <div class="row align-items-start">
+      <div class="col">
+     
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item"> <!--Caracteristica 1-->
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+               Característica
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>-El tipo de software que maneja Windows es privado</p>
+                <p>-Su servidor web es 	Microsoft IIS</p>
+            </div>
+            </div>
+          </div>
+          <div class="accordion-item"><!--Caracteristica 2-->
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Característica
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>-El lenguaje script que maneja es VBScript, ASP.NET</p>
+                <p>-Maneja base de datos como Microsoft SQL Server, Microsoft Access</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item"> <!--Caracteristica 3-->
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Característica
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">
+                <p>-Su software de gestión es Plesk</p>
+                <p>-Tiene Interfaz de usuario gráfica</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!-----------List group---------->
+<div class="mt-5 text-center"></div>
+<div id="local" class="border-top border-2"> <!-- Linea gris-->  
+    <div>
+        <div class="wrapper-local">
+            <h2>Todos los Windows que han existido a lo largo de los años</h2>
+            <h2 class="text-primary mb-4" id="typewriter"></h2> 
+        </div>
+    </div>
+</div>
+
+<div class="container text-center">
+  <div class="row align-items-start">
+    <div class="col">
+    <p></p>
+      <ul class="list-group">
+        <li class="list-group-item">Windows 1.0 (1985)</li>
+        <li class="list-group-item">Windows 2.0 (1987)</li>
+        <li class="list-group-item">Windows 3 (1990)</li>
+        <li class="list-group-item">Windows NT (1993)</li>
+        <li class="list-group-item">Windows 95 (1995)</li>
+        <li class="list-group-item">Windows 98 (1998)</li>
+      </ul>
+    </div>
+    <div class="col">
+      <p></p>
+      <ul class="list-group">
+        <li class="list-group-item">Windows Millennium Edition (2000)</li>
+        <li class="list-group-item">Windows XP (2001)</li>
+        <li class="list-group-item">Windows Vista (2007)</li>
+        <li class="list-group-item">Windows 7 (2009)</li>
+        <li class="list-group-item">Windows 8 (2012)</li>
+        <li class="list-group-item">Windows 10 (2015)</li>
+        <li class="list-group-item">Windows 11 (2021)</li>
+      </ul>
+    </div>
+
+    <!----------Cards2---------->
+    <div class="mt-5 text-center"></div>
+    <div id="local" class="border-top border-2"> <!-- Linea gris-->  
+        <div>
+            <div class="wrapper-local">
+                <h2>Evolución de las barras de Windows</h2>
+                <h2 class="text-primary mb-4" id="typewriter"></h2> 
+            </div>
+        </div>
+    </div>
+
+    <div class="container text-center">
+      <div class="row align-items-start">
+        <div class="col">
+        <p></p>
+          <div class="card">
+            <div class="card-body">
+             <img src="img/barras.jpg" width="300" height="300" class="img-thumbnail">
+             <p>Comenzando el milenio fue lanzado Windows XP, en 2001, y para 2012 ocupaba 46,33% del mercado de uso de sistemas operativos 
+              en el mundo. En el lapso de 2007 y 2012, se lanzaron las versiones Windows Vista y Windows 8, sistemas que fracasaron en el 
+              mercado y que no llegaron a reemplazar directamente la versión anterior.</p>
+            </div>
+          </div>
+        </div>
+
+
+      <!----------Collapse--------->
+      <div class="mt-5 text-center"></div>
+  <div id="local" class="border-top border-2"> <!-- Linea gris-->  
+      <div>
+      <div class="container text-center">
+        <div class="row align-items-start">
+          <div class="col"> <!--Collapse1-->
+            <p></p>
+            <p>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+                ¿Dónde se encuentra windows?
+              </button>
+            </p>
+            <div style="min-height: 120px;">
+              <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                <div class="card card-body" style="width: 300px;">
+                  Microsoft Corporation es una empresa multinacional de origen estadounidense, fundada el 4 de abril de 1975 por Bill Gates y
+                   Steve Ballmer. Tiene su sede principal en Redmond, Washington, Estados Unidos.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col"> <!--Collapse2-->
+            <p></p>
+            <p>
+              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+               ¿Para qué usar Windows?
+              </a>
+              <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Aquí la respuesta
+              </button>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                Windows es un sistema operativo, es decir, un programa de software que admite funciones básicas, como la administración de archivos y la ejecución de aplicaciones, y que usa dispositivos periféricos, como la impresora, el monitor, el teclado y el mouse.
+              </div>
+            </div>
+          </div>
+
+        <!----------Tooltips---------->
+        <div class="mt-5 text-center"></div>
+        <div id="local" class="border-top border-2"> <!-- Linea gris-->  
+            <div>
+                <div class="wrapper-local">
+                    <h2>Otras sorpresas de Windows</h2>
+                    <h2 class="text-primary mb-4" id="typewriter"></h2> 
+                </div>
+            </div>
+        </div>
+        
+        <div class="container text-center">
+          <div class="row align-items-start">
+            <div class="col">
+            
+              <p class="muted">Puedes encontrar más de Windows dando <a href="#https://www.microsoft.com/es-mx" data-bs-toggle="tooltip" data-bs-title="Default tooltip">click</a> 
+                aquí, y aprende todo acerca de lo que trata esta empresa y su sistema operativo.
+            </p>
+            <img src="img/portada.jpg" width="500" height="300">
+            </div>
+          </div>
+        </div>
+   
+      <!---------Modal---------->
+      <div class="mt-5 text-center"></div>
+        <div id="local" class="border-top border-2"> <!-- Linea gris-->  
+            <div>
+                <div class="wrapper-local">
+                    
+                    <h2 class="text-primary mb-4" id="typewriter"></h2> 
+                </div>
+            </div>
+        </div>
+
+   <div class="container text-center"></div>
+   <div class="col align-self-end">
+  
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Un click antes de irte :D
+  </button>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Hola usuario</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¡Espero que te haya gustado la página y muchas gracias por visitarnos!
+        <div><img src="img/mascota.png" width="50" height="50"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Encantado</button>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<!----------Spinners---------->
+<div class="mt-5 text-center"></div>
+<div id="local" class="border-top border-2"> <!-- Linea gris-->  
+    <div>
+        <div class="wrapper-local">
+            <p></p>
+            <h2 class="text-primary mb-4" id="typewriter"></h2> 
+        </div>
+    </div>
+</div>
+
+<center>
+<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-secondary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-light" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-dark" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+</center>
+
+
+
+
+
+
+   
+
+
+          
+
+  </body>
+</html>
